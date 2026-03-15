@@ -1,6 +1,8 @@
-#include<stdio.h>
-int main()
+#include <stdio.h>
+
+int main(void)
 {
-    printf("Hello World");
+    printf("Hello World from CGit!\n");
+    printf("https://github.com/amardipcsit25-crypto/CGit\n");
     return 0;
 }
