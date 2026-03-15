@@ -90,3 +90,4 @@ printf("%s %s %s %d %d\n",std[i].name,std[i].address,std[i].gender,std[i].age,st
 fclose(fp);
 getch();
 }
+// peritnf
