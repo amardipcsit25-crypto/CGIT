@@ -34,6 +34,6 @@ gcc Repocheck.c -o Repocheck.exe
 ./Repocheck.exe
 ```
 ### IN ARRAY 
-we learned about the arrary concept and its use in the programe by doing related program.
+I have learned about the arrary concept and its use in the programe by doing related program.
 Basically array is the variable in which we can store multiple values without creating multiple variables.Its index always start with 0.
 Its types are one dimensional arrary(for sorting the arrary in ascending and descending  problems) and multi-dimensional array(for martrix problems).
