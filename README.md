@@ -48,7 +48,7 @@ String is the function which comes under the header file <string.h>.Its data typ
  3.strcmp():used to compare between the two string.
  
  4.strrev(); used to reverse the string.
- 
+              
  5.strlwr():used to convert to lowercase.
  
  6.strupr():used to convert to uppercase.
