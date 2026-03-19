@@ -40,8 +40,10 @@ Its types are one dimensional arrary(for sorting the arrary in ascending and des
 
 ## About string function 
 String is the function which comes under the header file <string.h>.Its data types is %s.String is written under double quote(" ").
- 1.strlen():used to the calculated the length of string.
+ 1.strlen():used to the calculated the length of string.  
+ 
  2.strcpy():used to copy the string.
+ 
  3.strcmp():used to compare between the two string.
  4.strrev(); used to reverse the string.
  5.strlwr():used to convert to lowercase.
