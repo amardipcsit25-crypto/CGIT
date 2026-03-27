@@ -62,6 +62,7 @@ Functions in C Programming
 In C programming, a function is a block of code that performs a specific task. Functions help in breaking a large program into smaller, manageable, and reusable parts.
 
  Objective
+ 
 .To understand the concept of functions in C
 
 .To learn how to declare, define, and call functions
@@ -72,6 +73,7 @@ In C programming, a function is a block of code that performs a specific task. F
 Functions in C are mainly of two types:
 
 1. Library Functions
+
 These are predefined functions provided by C.
 Examples:
 
@@ -85,34 +87,34 @@ strlen()
 These are created by the programmer.
 
  Function Structure
-A function has three main parts:
+  A function has three main parts:
 
 1. Declaration (Prototype)
-return_type function_name(parameters);
+    return_type function_name(parameters);
 2. Definition
-return_type function_name(parameters) {
+    return_type function_name(parameters) {
     // code
-}
+     }
 3. Function Call
-function_name(arguments);
+   function_name(arguments);
 
- Types of User-defined Functions
-No arguments, no return value
+   Types of User-defined Functions
+   No arguments, no return value
 
-Arguments, no return value
+   Arguments, no return value
 
-No arguments, with return value
+   No arguments, with return value
 
-Arguments, with return value
+   Arguments, with return value
 
 Example Program
-#include <stdio.h>
+   #include <stdio.h>
 
 // Function declaration
-int add(int a, int b);
+   int add(int a, int b);
 
-int main() {
-    int result;
+    int main() {
+      int result;
     
     // Function call
     result = add(5, 3);
@@ -127,13 +129,13 @@ int add(int a, int b) {
 }
 
  Advantages of Functions
-Code reusability
+  Code reusability
 
-Easy debugging
+  Easy debugging
 
-Improves readability
+  Improves readability
 
-Reduces code duplication
+  Reduces code duplication
 
 Conclusion
 Functions are an essential part of C programming. They make programs modular, organized, and easier to maintain. Using functions properly helps in writing efficient and structured code.
