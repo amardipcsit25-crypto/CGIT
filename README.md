@@ -138,6 +138,7 @@ int add(int a, int b) {
   Reduces code duplication
 
 Conclusion
+
 Functions are an essential part of C programming. They make programs modular, organized, and easier to maintain. Using functions properly helps in writing efficient and structured code.
 
 
