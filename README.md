@@ -141,7 +141,7 @@ Conclusion
 
 Functions are an essential part of C programming. They make programs modular, organized, and easier to maintain. Using functions properly helps in writing efficient and structured code.
 
- Pointers in C
+ POINTER IN C
  Introduction
 
 A pointer is a variable that stores the address of another variable.
@@ -233,11 +233,13 @@ But:
 
 char *ptr;
 ptr + 1 → moves 1 byte only
- Why Pointer Arithmetic is Useful
+
+Why Pointer Arithmetic is Useful
 Traversing arrays
 Working with strings
 Dynamic memory handling
 Implementing data structures
+
 Conclusion
 
 Pointer arithmetic allows efficient navigation through memory using type-based steps, making it powerful for arrays and advanced programming.
