@@ -141,5 +141,104 @@ Conclusion
 
 Functions are an essential part of C programming. They make programs modular, organized, and easier to maintain. Using functions properly helps in writing efficient and structured code.
 
+ Pointers in C
+ Introduction
 
+A pointer is a variable that stores the address of another variable.
+
+ Declaration & Initialization
+int *ptr;
+int a = 10;
+ptr = &a;
+
+ Dereferencing
+printf("%d", *ptr);  // value of a
+
+Types of Pointers
+Null Pointer → int *p = NULL;
+Void Pointer → void *p;
+Pointer to Pointer → int **pp;
+
+Pointer Arithmetic.
+What is Pointer Arithmetic?
+
+Pointer arithmetic means performing operations on pointers to move through memory locations.
+
+ Important: Pointer movement depends on the data type size, not just 1 byte.
+
+Basic Operations
+1. Increment (ptr++)
+
+Moves pointer to the next memory location of its type.
+
+int a = 10;
+int *ptr = &a;
+
+ptr++;  // moves by sizeof(int)
+
+If int = 4 bytes, pointer moves 4 bytes forward
+
+2. Decrement (ptr--)
+
+Moves pointer to the previous location
+
+ptr--;
+3. Addition (ptr + n)
+
+Moves pointer forward by n elements
+
+ptr = ptr + 2;
+
+ Moves 2 × sizeof(data_type) bytes
+
+4. Subtraction (ptr - n)
+
+Moves pointer backward
+
+ptr = ptr - 1;
+5. Difference Between Two Pointers
+int diff = ptr1 - ptr2;
+
+Gives number of elements between them (not bytes)
+
+ Example with Array
+#include <stdio.h>
+
+int main() {
+    int arr[3] = {10, 20, 30};
+    int *ptr = arr;
+
+    printf("%d\n", *ptr);      // 10
+    printf("%d\n", *(ptr+1));  // 20
+    printf("%d\n", *(ptr+2));  // 30
+
+    return 0;
+}
+
+Here:
+
+ptr → first element
+ptr+1 → second element
+ptr+2 → third element
+If:
+
+int *ptr;
+
+Then:
+
+ptr + 1 → moves 4 bytes (if int = 4 bytes)
+ptr + 2 → moves 8 bytes
+
+But:
+
+char *ptr;
+ptr + 1 → moves 1 byte only
+ Why Pointer Arithmetic is Useful
+Traversing arrays
+Working with strings
+Dynamic memory handling
+Implementing data structures
+Conclusion
+
+Pointer arithmetic allows efficient navigation through memory using type-based steps, making it powerful for arrays and advanced programming.
 
