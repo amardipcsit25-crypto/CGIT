@@ -244,3 +244,81 @@ Conclusion
 
 Pointer arithmetic allows efficient navigation through memory using type-based steps, making it powerful for arrays and advanced programming.
 
+ABOUT STRUCTURE
+
+What is a Structure?
+
+A structure in C is a user-defined data type that allows you to store different types of data in one unit.
+It is useful when you want to represent a real-world entity like an employee, student, etc.
+
+Syntax
+struct structure_name {
+    data_type member1;
+    data_type member2;
+    ...
+};
+Declaration & Initialization
+struct employee {
+    int id;
+    char name[50];
+    float salary;
+};
+
+struct employee e1 = {101, "Ram", 50000};
+Accessing Structure Members
+
+Use the dot operator (.)
+
+printf("%d", e1.id);
+Array of Structures
+
+Used when handling multiple records.
+
+struct employee emp[3];
+Structure with Pointer
+
+Use arrow operator (->)
+
+struct employee *ptr;
+ptr = &e1;
+printf("%d", ptr->id);
+Nested Structure
+
+Structure inside another structure.
+
+struct date {
+    int day, month, year;
+};
+
+struct employee {
+    int id;
+    struct date doj;
+};
+Passing Structure to Function
+void display(struct employee e) {
+    printf("%d", e.id);
+}
+Why Use Structure?
+Organizes related data together
+Makes programs easy to manage
+Useful in file handling and database-like programs
+Real-Life Example
+
+In your case (employee system):
+
+struct employee{
+    int emp_id;
+    char emp_name[50];
+    char emp_gender[10];
+    int emp_age;
+    char emp_department[50];
+    long int salary;
+};
+Important Notes 
+Use . for normal variable
+Use -> for pointer
+
+Do not use & with array names in scanf
+
+scanf("%s", emp.emp_name);   // correct
+Structures help a lot in file handling (fscanf, fprintf)
