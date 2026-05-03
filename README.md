@@ -259,8 +259,8 @@ struct structure_name {
     data_type member2;
     ...
 };
-
-Declaration & Initialization
+ 
+ Declaration & Initialization
 
 struct employee {
     int id;
